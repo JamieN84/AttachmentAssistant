@@ -22,6 +22,7 @@ namespace Attachment_Assistant
             InitializeTreeView();
             datePicker.Value = DateTime.Today;
             clbSuffixes.Items.Clear();
+            
             attnameDate = datePicker.Value.ToString("yyyyMMdd") + " - ";
         }
 
@@ -42,6 +43,8 @@ namespace Attachment_Assistant
                 {
                     case "EmpLeaveApp":
                         clbSuffixes.Items.Add("Med Cert");
+                        clbSuffixes.Items.Add("Dr Cert");
+                        clbSuffixes.Items.Add("Other Cert");
                         break;
                     default:
                         break;
@@ -60,7 +63,7 @@ namespace Attachment_Assistant
 
             if (attnameDocType != null)
             {
-                txtAttachmentName.Text = attnameDate + attnameDocType + " [" + attnameSuffix  + "]";
+                txtAttachmentName.Text = attnameDate + attnameDocType + attnameSuffix;
             } else
             {
                 txtAttachmentName.Text = "";
@@ -91,17 +94,26 @@ namespace Attachment_Assistant
 
         private void clbSuffixes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            BuildSuffixList();
+            BuildAttachmentName();
         }
 
         private void BuildSuffixList()
         {
             attnameSuffix = "";
 
-            attnameSuffix = attnameSuffix + string.Join(",", clbSuffixes.SelectedItems.Cast<);
-          
+            if (clbSuffixes.SelectedItems.Count > 0)
+            {
+                foreach (var items in clbSuffixes.SelectedItems)
+                {
+                    attnameSuffix += items.ToString() + ",";
+                }
+                attnameSuffix = " [" + attnameSuffix.TrimEnd(',') + "]";
+            }
+        }
 
-            //attnameSuffix = (attnameSuffix.Length > 0) ? attnameSuffix + string.Join(",", clbSuffixes.SelectedItems) : attnameSuffix;
+        private void btnCopy_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(txtAttachmentName.Text);
         }
     }
 }

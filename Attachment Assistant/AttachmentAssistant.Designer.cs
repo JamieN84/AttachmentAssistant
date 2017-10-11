@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Leave Application");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("EMPLOYEE", new System.Windows.Forms.TreeNode[] {
-            treeNode5});
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Leave Application");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("EMPLOYEE", new System.Windows.Forms.TreeNode[] {
+            treeNode3});
             this.treeDocType = new System.Windows.Forms.TreeView();
             this.datePicker = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,13 +49,13 @@
             this.treeDocType.BackColor = System.Drawing.Color.White;
             this.treeDocType.Location = new System.Drawing.Point(12, 12);
             this.treeDocType.Name = "treeDocType";
-            treeNode5.Name = "nodeLeaveApp";
-            treeNode5.Tag = "EmpLeaveApp";
-            treeNode5.Text = "Leave Application";
-            treeNode6.Name = "nodeEmployee";
-            treeNode6.Text = "EMPLOYEE";
+            treeNode3.Name = "nodeLeaveApp";
+            treeNode3.Tag = "EmpLeaveApp";
+            treeNode3.Text = "Leave Application";
+            treeNode4.Name = "nodeEmployee";
+            treeNode4.Text = "EMPLOYEE";
             this.treeDocType.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode6});
+            treeNode4});
             this.treeDocType.Size = new System.Drawing.Size(279, 203);
             this.treeDocType.TabIndex = 0;
             this.treeDocType.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeDocType_AfterSelect);
@@ -128,6 +128,7 @@
             this.btnCopy.TabIndex = 9;
             this.btnCopy.Text = "Copy";
             this.btnCopy.UseVisualStyleBackColor = true;
+            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
             // 
             // cbNoDate
             // 
@@ -143,10 +144,6 @@
             // clbSuffixes
             // 
             this.clbSuffixes.FormattingEnabled = true;
-            this.clbSuffixes.Items.AddRange(new object[] {
-            "Med Cert",
-            "Dr Cert",
-            "Other"});
             this.clbSuffixes.Location = new System.Drawing.Point(297, 120);
             this.clbSuffixes.Name = "clbSuffixes";
             this.clbSuffixes.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
