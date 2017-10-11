@@ -1,0 +1,10 @@
+C:\VS Projects\Attachment Assistant\Attachment Assistant\obj\Debug\Attachment Assistant.csprojResolveAssemblyReference.cache
+C:\VS Projects\Attachment Assistant\Attachment Assistant\obj\Debug\Attachment_Assistant.frmMain.resources
+C:\VS Projects\Attachment Assistant\Attachment Assistant\obj\Debug\Attachment_Assistant.Properties.Resources.resources
+C:\VS Projects\Attachment Assistant\Attachment Assistant\obj\Debug\Attachment Assistant.csproj.GenerateResource.Cache
+C:\VS Projects\Attachment Assistant\Attachment Assistant\obj\Debug\Attachment Assistant.csproj.CoreCompileInputs.cache
+C:\VS Projects\Attachment Assistant\Attachment Assistant\bin\Debug\Attachment Assistant.exe.config
+C:\VS Projects\Attachment Assistant\Attachment Assistant\bin\Debug\Attachment Assistant.exe
+C:\VS Projects\Attachment Assistant\Attachment Assistant\bin\Debug\Attachment Assistant.pdb
+C:\VS Projects\Attachment Assistant\Attachment Assistant\obj\Debug\Attachment Assistant.exe
+C:\VS Projects\Attachment Assistant\Attachment Assistant\obj\Debug\Attachment Assistant.pdb
